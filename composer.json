@@ -1,0 +1,24 @@
+{
+    "name": "idfluid/comments",
+    "description": "",
+    "authors": [
+        {
+            "name": "Shandy Hermawan",
+            "email": "hrm.shandy05@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/controllers",
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Idfluid\\Comments\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

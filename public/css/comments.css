@@ -1,0 +1,238 @@
+.comments .navbar {
+	background: transparent;
+	border-bottom: 2px solid rgba(0, 39, 59, 0.08);
+	border-radius: 0;
+	min-height: 30px;
+}
+.comments ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.comments ul:before, .comments ul:after {
+	display: table;
+	content: '';
+}
+.comments ul:after {
+	clear: both;
+}
+.comments ul li.left {
+	float: left;
+}
+.comments ul li.right {
+	float: right;
+}
+.comment-count {
+	font-weight: bold;
+	display: inline-block;
+	position: relative;
+	height: 30px;
+}
+.comment-count:after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #333;
+	position: absolute;
+	bottom: -2px;
+} 
+
+.comments .user {
+	color: rgba(0, 39, 59, 0.35) !important;
+	font-weight: bold;
+}
+.comments .user:hover {
+	text-decoration: none;
+	color: #333 !important;
+}
+.comments .dropdown-menu {
+	right: 0 !important;
+	left: inherit !important;
+	min-width: inherit !important;
+	box-shadow: none !important;
+	border: 2px solid rgba(0, 39, 59, 0.08) !important;
+}
+.commentbox, #comments .list .item {
+	position: relative;
+	margin-top: 25px;
+}
+#comments .list.replies {
+	margin-left: 60px !important;
+}
+.commentbox .avatar, 
+#comments .list .avatar {
+	width: 48px;
+	height: 48px;
+	border-radius: 5px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#comments .list.replies .avatar, .reply-box .avatar{
+	width: 36px !important;
+	height: 36px !important;
+}
+.commentbox .avatar img,
+#comments .list .avatar img {
+	width: 100%;
+	height: 100%;
+}
+.commentbox .textarea-wrapper {
+	border: 2px solid rgba(0,39,59,.2);
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.commentbox .textarea-wrapper .post-actions {
+	background: #f6f8f9;
+	border-radius: 0 0 2px 2px;
+	border-top: solid 2px;
+	border-color: #cbd2d6;
+	border-color: rgba(0,39,59,.2);
+	height: 36px;
+}
+.commentbox .textarea-wrapper .post-actions:before,
+.commentbox .textarea-wrapper .post-actions:after {
+	content: '';
+	display: table;
+}
+.commentbox .textarea-wrapper .post-actions:after {
+	clear: both;
+}
+.commentbox .textarea-wrapper .post-actions .remaining {
+	height: 100%;
+	padding: 6px 15px;
+	color: rgba(0,39,59,.5);
+}
+.commentbox .textarea-wrapper .post-actions .cancel {
+	padding: 6px 20px;
+	color: rgba(0,39,59,.5);
+	display: none;
+}
+.commentbox .textarea-wrapper .post-actions .cancel:hover{
+	text-decoration: none;
+	color: rgba(0,39,59,.8);
+}
+.commentbox .textarea-wrapper .post-actions .btn-submit {
+	border: 0;
+	height: 100%;
+	border-radius: 0;
+	min-width: 120px;
+}
+.commentbox .textarea-wrapper, .comment-body, #comments .list .right{
+	margin-left: 60px;
+}
+.reply-box .textarea-wrapper, #comments .list.replies .right {
+	margin-left: 48px;
+}
+.commentbox textarea {
+	border: 0;
+	box-shadow: none;
+	height: 46px;
+	max-height: 350px !important;
+}
+.commentbox textarea:focus {
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+.commentbox .author {
+	font-weight: bold;
+	margin-right: 20px;
+}
+.commentbox .time {
+	color: rgba(0, 39, 59, 0.35);
+	font-size: 12px;
+}
+.commentbox .comment-inner {
+	margin: 5px 0;
+}
+.reply-box {
+	padding-left: 48px;
+}
+
+.reply-box .post-actions .cancel {
+	display: inline-block !important;
+}
+._hide {
+	display: none;
+}
+.auth {
+	margin-top: 30px;
+}
+.register {
+	font-size: 16px;
+	font-weight: bold;
+}
+.error {
+	color: red;
+	border-color: red;
+}
+
+#comments .list .item .author {
+	font-weight: bold;
+	font-size: 12px;
+	color: rgb(85, 85, 85);
+}
+#comments .list .item .author:after {
+	content: '.';
+	display: inline-block;
+	font-size: 18px;
+	color: #ccc;
+	position: relative;
+	top: -2px;
+	margin-left: 5px;
+}
+#comments .list .item .date {
+	color: rgba(0,39,59,.5);
+	font-size: 12px;
+}
+#comments .list .item .reply {
+	color: rgba(0,39,59,.35);
+	font-size: 13px;
+	margin-top: 5px;
+	display: inline-block;
+}
+#comments .list .item .reply:hover {
+	text-decoration: none;
+	color: rgba(29,47,58,.6);
+}
+
+.comments input.form-control {
+	border: 2px solid rgba(0,39,59,.2);
+	border-radius: 4px;
+}
+.comments .login, .comments .login-form {
+	padding-left: 60px;
+}
+.comments .login-form, .comments .register-form {
+	margin-top: 25px;
+}
+
+.comments .login li {
+	display: inline-block;
+}
+.comments .login li > a {
+	width: 30px;
+	height: 30px;
+	background: url(../images/social-sprites.png);
+	text-indent: 10000px;
+	display: block;
+	border-radius: 100%;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+	opacity: 1;
+}
+.comments .login li > a.facebook {
+	background-position: 0 -150px;
+}
+.comments .login li > a.local {
+	background-position: 0 -1650px;
+}
+.comments .login li > a:hover {
+	opacity: .8;
+}
+
